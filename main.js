@@ -409,3 +409,12 @@ for (let fila = 0; fila <= repeticiones; fila++) {
     console.log(`${asterisco}`); //INGRESO EL CONSOLE LOG ACA PORQUE SI LO HICIERA POR FUERA DEL BUCLE ME VA A MOSTRAR SOLO LA ULTIMA FILA, ES DECIR, 5 ASTERISCOS
 }*/
 
+//SE TRATA DE CREAR UNA APLICACION QUE CALCULE LA SUMA DE TODOS LOS NUMEROS ENTEROS POSITIVOS ENTRE 0 Y EL NUMERO TECLEADO POR EL USUARIO. EL RESULTADO SERA DE LA FORMA "LOS NUMERO ENTEROS DE 0 A N SUMAN SUMA"
+
+/*let numero = Number(prompt("Ingrese hasta que numero hay que sumar"));
+let conteo = 0;
+
+for (let i = 0; i <= numero; i++) {
+    conteo += i;  
+}
+alert(`${conteo}`);*/
