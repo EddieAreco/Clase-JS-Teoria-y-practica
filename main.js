@@ -418,3 +418,18 @@ for (let i = 0; i <= numero; i++) {
     conteo += i;  
 }
 alert(`${conteo}`);*/
+
+//PROGRAMA UN SCRIPT QUE PIDA AL USUARIO QUE TECLEE 4 NUMEROS (UNO CADA VEZ). CON ESOS, EL PROGRAMA DEBERA CALCULAR LA MEDIA ARITMETICA. O SEA, LA SUMA DE LOS 4 DIVIDIDA ENTRE 4
+
+let numero = 0;
+let promedio = 0;
+let conteo = 0;
+
+for (let i = 0; i < 4; i++) {
+    numero = Number(prompt("Ingrese un numero"));
+    conteo += numero;
+    alert(`El conteo es igual a: ${conteo}`);
+    promedio = (conteo / i);
+}
+
+alert(`El promedio final de los números ingresados es: ${promedio}`);
