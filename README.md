@@ -148,7 +148,7 @@ function mayorQue(n){
 
 let mayorQueCinco = mayorQue(5);
 
-EN ESTE CASO 5, VA A TOMAR EL VALOR DE "n" Y "mayorQue" VA A TOMAR EL VALOR DE LA FUNCION QUE SERIA EL return
+EN ESTE CASO, 5 VA A TOMAR EL VALOR DE "n" Y "mayorQue" VA A TOMAR EL VALOR DE LA FUNCION QUE SERIA EL return
 
 console.log(mayorQueCinco(6));
 
