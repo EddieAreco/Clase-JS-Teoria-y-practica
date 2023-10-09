@@ -22,10 +22,12 @@ ____
 
 ____
 ## ¿Cómo puedo acceder a una posición de un array? :
- 
-`for (let index = 0; index < nombres.length; index++) {
+
+````javascript
+for (let index = 0; index < nombres.length; index++) {
     console.log(nombres[index]);  
-}`
+}
+````
 _____
 
 # Métodos
@@ -38,8 +40,8 @@ puedo AGREGAR un elemento al FINAL: nombres.push("eddie");
 `````javascript
 puedo AGREGAR un elemento al INICIO: nombres.unshift("eddie");
 `````
-## POPjavascript
-`````
+## POP
+`````javascript
 puedo QUITAR un elemento al FINAL: nombres.pop;
 `````
 ## SHIFT
@@ -83,7 +85,7 @@ puedo INVERTIR el orden: nombres.reverse();
 const productos = [ "camisa", "gorra", "saco", "remera"];
 
 const eliminarPorNombre = (nombre) =>{
-    //COMO NO SE LA POSICION EXACTA DONDE VA A ESTAR ESE PARAMETRO (EN ESTE CADO EL NOMBRE) DENTRO DEL ARRAY, HAGO UNA VARIABLE INDEX
+    //COMO NO SE LA POSICION EXACTA DONDE VA A ESTAR ESE PARAMETRO (EN ESTE CASO EL NOMBRE) DENTRO DEL ARRAY, HAGO UNA VARIABLE INDEX
     let index = productos.indexOf(nombre);
 
     if (indexOf != -1){ //CON ESTA CONDICION LE ESTAMOS DICIENDO QUE SI ES -1 (QUE ES EL RESULTADO QUE INDEXOF ARROJA CUANDO NO ENCUENTRA UN VALOR QUE ESTE CASO SERIA EL NOMBRE DEL PRODUCTO QUE INGRESEMOS)
@@ -105,7 +107,7 @@ const productos = [
 
 ````javascript
 hago un iterador con un for of:
-for (const producto of productos){ //LE ESTOY INDICANDO QUE ACCEDA A LA CONSTANTE LLAMADA "PRODUCTOS" Y DENTRO DE ESTE, QUE VAYA A LOS "PRODUCTOS"
+for (const producto of productos){ //LE ESTOY INDICANDO QUE ACCEDA A LA CONSTANTE LLAMADA "PRODUCTO" Y DENTRO DE ESTE, QUE VAYA A LOS "PRODUCTOS"
     console.log(producto);
     console.log(producto.nombre); //QUIERO ACCEDER A LOS NOMBRES
     console.log(producto.id); //QUIERO ACCEDER A LOS ID
