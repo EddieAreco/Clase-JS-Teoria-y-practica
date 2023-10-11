@@ -11,14 +11,19 @@ cons boolean = [true, false, false];
 cons variado = [1, "ana", true];
 
 ```````
+<BR>
 
 [W3SCHOOL.COM/ARRAYS](https://www.w3schools.com/js/js_arrays.asp "Teoría sobre arrays")
+<BR>
+<BR>
 ____
 ## ¿Cómo puedo acceder a una posición de un array? :
 
 * console.log( nombres[2] );
 * console.log( numeros[0] );
 * console.log( variado[1] );
+<BR>
+<BR>
 
 ____
 ## ¿Cómo puedo acceder a una posición de un array? :
@@ -28,56 +33,94 @@ for (let index = 0; index < nombres.length; index++) {
     console.log(nombres[index]);  
 }
 ````
+<BR>
+
 _____
 
 # Métodos
+<BR>
 
 ## PUSH
 `````javascript
 puedo AGREGAR un elemento al FINAL: nombres.push("eddie");
 `````
+<BR>
+<BR>
+
 ## UNSHIFT
 `````javascript
 puedo AGREGAR un elemento al INICIO: nombres.unshift("eddie");
 `````
+<BR>
+<BR>
+
 ## POP
 `````javascript
 puedo QUITAR un elemento al FINAL: nombres.pop;
 `````
+<BR>
+<BR>
+
 ## SHIFT
 `````javascript
 puedo QUITAR un elemento al INICIO: nombres.shift();
 `````
+<BR>
+<BR>
+
 ## SPLICE
 `````javascript
 puedo QUITAR uno o varios elementos en CUALQUIER posicion: nombres.splice (1 (cual quiero eliminar?), 3 (hasta que posicion quiero eliminar?));
 `````
+<BR>
+<BR>
+
 ## JOIN
 `````javascript
 puedo UNIR todo en un string separados por un parametro: console.log(nombres.join("," o "***" o "---"));
 `````
+<BR>
+<BR>
+
 ## CONCAT
 `````javascript
 puedo CONCATENAR 2 arreglos en 1 solo: cons mezcla: nombres.concat (numeros);
 `````
+<BR>
+<BR>
+
 ## SLICE
 `````javascript
 puedo hacer una COPIA de un arreglo: const copia: nombres.slice (1 (desde donde), 2 (hasta donde, pero lo que este en esta posicion no se va a copiar));
 `````
+<BR>
+<BR>
+
 ## INDEXOF
 `````javascript
 puedo DEVOLVER una POSICION de un elemento y si no lo encuentra devuelve -1: console.log(nombres.indexOf("juan")) o console.log(nombres.indexOf("javier"));
 `````
+<BR>
+<BR>
+
 ## INCLUDES
 `````javascript
 puedo SABER EXISTENCIA si un elemento esta o no en arreglo dando como resultado true o false: console.log(nombres.includes("jose")) o console.log(nombres.includes("juan"));
 `````
+<BR>
+<BR>
+
 ## REVERSE
 `````javascript
 puedo INVERTIR el orden: nombres.reverse();
 `````
+<BR>
+
 ### Más info en : [W3SCHOOL.COM/METODOS](https://www.w3schools.com/js/js_array_methods.asp "métodos de arrays")
 ---
+<BR>
+<BR>
+
 ## `Si quisiera eliminar por nombre como puedo hacer?`
 
 ### tengo que recurrir a una funcion:
@@ -93,6 +136,8 @@ const eliminarPorNombre = (nombre) =>{
     }
 }
 ```
+<BR>
+
 ### `Los arrays también pueden tener dentro a objetos:`
 
 ```javascript
@@ -103,6 +148,8 @@ const productos = [
     {id : 4, nombre: "remera", precio: 600},
 ];
 ```
+<BR>
+
 `Cómo puedo acceder a los objetos dentro del array?:`
 
 ````javascript
@@ -113,6 +160,7 @@ for (const producto of productos){ //LE ESTOY INDICANDO QUE ACCEDA A LA CONSTANT
     console.log(producto.id); //QUIERO ACCEDER A LOS ID
 }
 ````
+<BR>
 
 `También podemos crear esos objetos a través de una Clase:`
 
@@ -131,13 +179,18 @@ productos.push(new Producto("media", 1284));
 productos.push(new Producto("gorra", 1219));
 productos.push(new Producto("camisa", 4214));
 ````
+<BR>
+<BR>
 
 # PARTE 2
 
 * `COMPRENDER QUE ES UNA FUNCION DE ORDEN SUPERIOR`
 * `DOMINAR LOS METODOS AVANZADOS DE ARRAYS`
+<BR>
+<BR>
 
 **funcion de orden superior** es una función que bien retorna una función o recibe por parametro una función
+<BR>
 
 ___
 ejemplo de una función que retorna otra función:
@@ -177,6 +230,8 @@ let division = operacionesBasicas("dividir");
 console.log(suma(10,15));
 console.log(division(12,3));
 ````
+<BR>
+
 ___
 ejemplo de una función que recibe como parámetro otra función:
 
@@ -207,9 +262,14 @@ sumar ([6,8,11,55], sumar);
 EN ESTE ULTIMO EJEMPLO, EL RESULTADO FINAL ES QUE A CADA NUMERO DEL ARRAY LE VA A SUMAR 1 YA QUE EN LA FUNCION SUMAR LE DIJIMOS QUE EL NUMERO QUE LE APAREZCA AHI, LE SUME 1
 
 ````
+<BR>
+<BR>
+
 ----
 # METODOS DE BUSQUEDA Y TRANSFORMACION
-----
+
+<BR>
+<BR>
 
 # FOR EACH
 
@@ -231,6 +291,8 @@ productos.forEach(item => {
 
 LA ORDEN QUE RECIBE ES QUE EN CADA ITERACION ME MUESTRE UN ITEM, QUE VA A TOMAR EL PROGRAMA COMO ITEM?, VA A TOMAR CADA OBJETO QUE TENEMOS DENTRO DEL ARRAY, A LO CUAL NOS VA A MOSTRAR EN CONSOLA, TAMBIEN PODEMOS PEDIRLE ALGO MAS PRECISO COMO EL NOMBRE O EL PRECIO
 ````
+<BR>
+<BR>
 
 # FIND
 
@@ -258,6 +320,8 @@ if (encontrado){ //SI ENCONTRADO ES TRUE...
     alert("Producto no encontrado");
 }
 ````
+<BR>
+<BR>
 
 # FILTER
 
@@ -276,6 +340,8 @@ filtrados.forEach((item) => {
     `)
 }) //HICIMOS UNA ITERACION PARA HACER UN RECORRIDO Y PARA QUE ME ARROJE TODA LA INFORMACION DE AQUELLOS PRODUCTO QUE CUMPLAN CON LA CONDICION DEL FILTER
 ````
+<BR>
+<BR>
 
 # SOME
 
@@ -286,6 +352,8 @@ console.log(productos.some(item => item.nombre === "media")); //TRUE
 console.log(productos.some(item => item.nombre === "gdasfsd")); //FALSE
 
 ````
+<BR>
+<BR>
 
 # MAP
 
@@ -308,6 +376,8 @@ const descuento = productos.map(item => {
 
 console.log(descuentos); //LO QUE ME VA A ARROJAR POR PANTALLA ES EL LISTADO DE TODOS LOS PRODUCTOS CON SUS RESPECTIVOS ID, NOMBRES Y CON EL DETALLE DE QUE A TODOS LOS PRECIOS LES VA A DESCONTAR UN 21%
 ````
+<BR>
+<BR>
 
 # REDUCE
 
@@ -323,6 +393,8 @@ ESTO PUEDE SERVIR PARA LA COMPRA TOTAL DE UN CARRITO DE COMPRAS O PARA OBTENER U
 
 let total = productos.reduce ((acum, item) => acum, item.precio, 0);
 ````
+<BR>
+<BR>
 
 # SORT
 
@@ -348,7 +420,51 @@ console.log(
         }//ME VA A ORDENAR LOS PRODUCTOS DE LA Z - A EN BASE AL NOMBRE
     })
 )
+
+const cars = [
+  {type:"Volvo", year:2016},
+  {type:"Saab", year:2001},
+  {type:"BMW", year:2010}
+];
+
+cars.sort(function(a, b){return a.year - b.year});
+
+RESULTADO:
+objetos del automóvil por año:
+
+Saab 2001
+BMW 2010
+Volvo 2016
+
 ````
+<BR>
+<BR>
 
+### Más info en : [W3SCHOOL.COM/ORDENACIONDEMATRICES](https://www.w3schools.com/js/js_array_sort.asp "ordenación de arrays")
 
+### Más info en : [W3SCHOOL.COM/ITERACIONDEMATRICES](https://www.w3schools.com/js/js_array_iteration.asp "iteración de arrays")
+<BR>
+<BR>
 
+## ENCONTRAR VALOR MAXIMO Y MINIMO EN UN ARRAY
+<BR>
+
+````javascript
+
+Puedes usar Math.max.apply para encontrar el número más alto en una matriz:
+
+function myArrayMax(arr) {
+  return Math.max.apply(null, arr);
+}
+
+Math.max.apply(null, [1, 2, 3])es equivalente a Math.max(1, 2, 3).
+
+Puedes usar Math.min.applypara encontrar el número más bajo en una matriz:
+
+function myArrayMin(arr) {
+  return Math.min.apply(null, arr);
+}
+
+Math.min.apply(null, [1, 2, 3])es equivalente a Math.min(1, 2, 3).
+
+````
