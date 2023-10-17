@@ -158,7 +158,7 @@ compra();/*
 //HASTA AHORA ASI COMO ESTA NO ESTA MAL PERO ME LIMITO EL INTENTO DE LA COMPRA A LA CANTIDAD DE OBJETOS QUE HAY DENTRO DEL ARRAY, ES DECIR, SI HAY 2 PRODUCTOS DENTRO DEL CATALOGO PARA COMPRAR, SOLO PUEDO HACER 2 INTENTOS DE COMPRA. POR OTRO LADO, NO ESTA FUNCIONANDO EL BUCLE DE CANTIDAD COMPRADA YA QUE SI ESTA DENTRO O FUERA DE UN FOR OF, POR MAS QUE INGRESE UN NUMERO O NO, SE CORTA LA FUNCION AHI*/
 
 
-class Producto {
+/*class Producto {
     constructor(id, nombre, precio, stock) {
         this.id = id;
         this.nombre = nombre;
@@ -308,4 +308,64 @@ function compra() {
     alert(`Gracias por su compra. Total a pagar: $${totalCompra}`);
 }
 
-compra();
+compra();*/
+
+const nombres = ["luis", "ana", "pepe", "juan", "jose", "laura"];
+
+const generarNombre = () => {
+    let index = Math.floor(Math.random() * nombres.length)//hasta donde quiero que vaya, hasta la longitud del arreglo);
+    return nombres[index];
+};
+
+console.log(generarNombre());
+console.log(generarNombre());
+console.log(generarNombre());
+console.log(generarNombre());
+console.log(generarNombre());
+
+
+const mostrarProducto = (productos) => {
+    let div = document.createElement("div");
+    div.innerHTML = `
+      <h2>Id: ${productos.id}</h2>
+      <p>Nombre: ${productos.nombre}</p>
+      <b>$${productos.precio}</b>
+      <b>Stock: ${productos.stock}</b>
+      <hr />
+    `;
+    document.body.append(div);
+  };
+  
+  class Producto {
+    constructor(id, nombre, precio, stock) {
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.stock = stock;
+    }
+}
+
+const productos = [];
+
+productos.push(new Producto(1, "cerveza brahma 473", 330, 110));
+productos.push(new Producto(2, "cerveza heineken 473", 560, 30));
+productos.push(new Producto(3, "cerveza quilmes 473", 430, 150));
+productos.push(new Producto(4, "fernet branca", 2930, 48));
+productos.push(new Producto(5, "vodka smirnoff", 1930, 24));
+productos.push(new Producto(6, "vodka smirnoff maracuya", 1930, 12));
+productos.push(new Producto(7, "vodka smirnoff fr. rojos", 2060, 9));
+productos.push(new Producto(8, "vodka skyy anana", 2200, 30));
+productos.push(new Producto(9, "vodka skyy coco", 2000, 12));
+productos.push(new Producto(10, "coca cola 2,5 lt", 990, 230));
+productos.push(new Producto(11, "pepsi cola 2 lt", 730, 160));
+productos.push(new Producto(12, "fanta 2 lt", 780, 110));
+productos.push(new Producto(13, "pritty limon 3lt", 930, 170));
+
+productos.unshift(new Producto(22, "sprite 3 lt", 1000, 12));
+
+productos.unshift(new Producto(27, "whisky blue label", 3000, 1));
+
+  
+  productos.forEach((productos) => {
+    mostrarProducto(productos);
+  });

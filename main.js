@@ -434,10 +434,239 @@ for (let i = 0; i < 4; i++) {
 
 alert(`El promedio final de los números ingresados es: ${promedio}`);*/
 
+//-----------------------------------EJERCICIOS COMPLEMENTARIOS DE CODER-------------------------------------------------------------------------------
+
+//     1)
+
+// let nombre = "Homero";
+// let apellido = "Simpson";
+// let edad = 33;
+
+//      2)
+
+const ciudad1 = "La Pampa";
+const ciudad2 = "San Juan";
+const ciudad3 = "Buenos Aires";
+const ciudad4 = "Rosario";
+const ciudad5 = "Cordoba";
+
+//      3)
+
+// let nombreApellido = "Eddie Areco";
+// let edad = 32;
+// let nacionalidad = "Argentino";
+// let documento = 36138970;
+// let estadoCivil = "soltero";
+// let domicilio = "Padre Lozano 2242";
+// let sexo = "Masculino";
+// let fechaPermiso = new Date();
+// function sumarDias(fecha, dias){
+//     fecha.setDate(fecha.getDate() + dias);
+//     return fecha;
+//   };
+// let d = new Date();
+// let vencimientoPermiso = (sumarDias(d, 3650));
+
+// console.log (`Datos del titular de este permiso:\nNombre y Apellido: ${nombreApellido}\nEdad: ${edad}\nNacionalidad: ${nacionalidad}\nDNI: ${documento}\nEstado Civil: ${estadoCivil}\nDomicilio en: ${domicilio}\nSexo: ${sexo}\nFecha de otorgamiento de permiso: ${fechaPermiso}\nPermiso válido hasta: ${vencimientoPermiso}`);
+
+//        4)
+
+// let integrante1 = "Fabrizio";
+// let integrante2 = "Gaston";
+// let integrante3 = "Bruno";
+// let integrante4 = "Eddie";
+// let integrante5 = "Marcos";
+// let familia = "Integrante de familia numero 1)" + integrante1 + "\n" +
+// "Integrante de familia numero 2)" + integrante2 + "\n" +
+// "Integrante de familia numero 3)" + integrante3 + "\n" +
+// "Integrante de familia numero 4)" + integrante4 + "\n" +
+// "Integrante de familia numero 5)" + integrante5;
+
+// console.log(familia);
+
+//            5)
+
+// let numero = Number(prompt("Ingrese un numero para que le aplique un descuento"));
+// let descuento10 = numero - (numero*0.1);
+// let descuento50 = numero - (numero*0.5);
+// let descuento75 = numero - (numero*0.75);
+
+// alert(`A este número ${numero}, si le aplico un descuento de 10%, voy a tener un total de: ${descuento10}`);
+// alert(`A este número ${numero}, si le aplico un descuento de 50%, voy a tener un total de: ${descuento50}`);
+// alert(`A este número ${numero}, si le aplico un descuento de 75%, voy a tener un total de: ${descuento75}`);
+
+
+//             6)
+
+// let nombre1 = "eddie";
+// let nombre2 = "luisa";
+// let nombre3 = "maria";
+// let nombre4 = "tito";
+// let nombre5 = "juan";
+// let nombre6 = "ana";
+// let nombre7 = "luis";
+// let nombre8 = "kiko";
+
+// function bart(){
+
+//     let nombre = prompt("Ingrese un nombre").toLowerCase();
+
+//     if (nombre === nombre1 || nombre === nombre2 || nombre === nombre3 || nombre === nombre4 || nombre === nombre5 || nombre === nombre6 || nombre === nombre7 || nombre === nombre8){
+//         alert("fui yo");
+//     }else{
+//         alert("Yo no fui");
+//         bart();
+//     }
+// }
+
+// bart();
+
+//           7)
+
+// function tecla(){
+
+//     let input = prompt("Ingrese un caracter, letra o número").toLowerCase();
+
+//     if (input === "y"){
+//         alert("correcto");
+//     }else{
+//         alert("Error");
+//         tecla();
+//     }
+
+// }
+
+// tecla();
+
+//          8)
+
+// let numero = Number(prompt("Ingrese un número entre 1 y 4"));
+
+// switch(numero){
+//     case 1: alert("Elegiste a Homero")
+//     break;
+//     case 2: alert("Elegiste a Marge")
+//     break;
+//     case 3: alert("Elegiste a Bart")
+//     break;
+//     case 4: alert("Elegiste a Lisa")
+//     break;
+//     default: alert("Error")
+//     break;
+// }
+
+//           9)
+
+// function presupuesto() {
+
+//     let numero = Number(prompt("Ingrese un número"));
+
+//     if (numero > 0 && numero <= 1000) {
+//         alert("Presupuesto bajo");
+//     } else if (numero > 1000 && numero <= 3000) {
+//         alert("Presupuesto medio");
+//     } else if (numero > 3000) {
+//         alert("Presupuesto alto");
+//     } else {
+//         alert("Error de ingreso");
+//         presupuesto();
+//     }
+// }
+
+// presupuesto();
+
+//       10)
+
+// function cargarLista() {
+
+//     let producto1 = prompt("Ingrese un producto de almacen");
+//     let producto2 = prompt("Ingrese otro producto de almacen");
+//     let producto3 = prompt("Ingrese otro producto de almacen");
+//     let producto4 = prompt("Ingrese otro producto de almacen");
+//     let lista;
+
+//     if (producto1 != "" && producto2 != "" && producto3 != "" && producto4 != "") {
+//         lista = alert(`lista de productos: ${producto1}, ${producto2}, ${producto3}, ${producto4}`);
+//     } else {
+//         alert("Error, Es necesario cargar todos los productos");
+//         cargarLista();
+//     }
+// }
+
+// cargarLista();
+
+//          11)
+
+// let numero = Number(prompt("Ingrese un número"));
+// let texto = prompt("Ingrese un texto").toLowerCase();
+// let resultado = "";
+
+// for( let i = 0; i < numero; i++){
+//     resultado += texto;
+// }
+
+// alert(`${resultado}`);
+
+//         12)
+
+// let numero = Number(prompt("Ingrese un número"));
+
+// for (let i = 0; i < numero; i++) {
+
+//     if (i > 3){
+//         break;
+//     }
+//         alert("lado");
+
+// }
+
+//          13)
+
+// let listaAlumnos = "";
+
+// for (let i = 0; i < 10; i++) {
+
+//     let alumnos = prompt("Ingrese el nombre del alumno").toLowerCase();
+//     listaAlumnos += alumnos + "\n";
+
+// }
+
+// alert(`La lista de alumnos es:\n${listaAlumnos}`);
+
+//          14)
+
+// let listaNombres = "";
+
+// for (let i = 0; i < Infinity; i++) {
+
+//     let personaje = prompt("Ingrese personajes de Harry Potter").toLowerCase();
+        
+//     listaNombres += personaje + "\n";
+
+//     if (personaje === "voldemort") {
+//         break;
+//     }
+// }
+
+// alert(`La lista de personajes ingresados son:\n${listaNombres}`);
+
+//    15)
+
+function repetir(){
+    let numero = Number(prompt("Ingrese un numero"));
+
+    if (f)
+    switch(numero){
+        case 1:
+
+    }
+}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 //Comienzo definiendo la clase producto y su constructor correspondiente con las diferentes propiedad de cada producto
 
-class Producto {
+/*class Producto {
     constructor(id, nombre, precio, stock) {
         this.id = id;
         this.nombre = nombre;
@@ -453,17 +682,17 @@ productos.push(new Producto(1, "cerveza brahma 473", 330, 110));
 productos.push(new Producto(2, "cerveza heineken 473", 560, 30));
 productos.push(new Producto(3, "cerveza quilmes 473", 430, 150));
 productos.push(new Producto(4, "fernet branca", 2930, 48));
-productos.push(new Producto(5, "vodka smirnoff", 1930, 24));
-productos.push(new Producto(6, "vodka smirnoff maracuya", 1930, 12));
-productos.push(new Producto(7, "vodka smirnoff fr. rojos", 2060, 9));
-productos.push(new Producto(8, "vodka skyy anana", 2200, 30));
-productos.push(new Producto(9, "vodka skyy coco", 2000, 12));
-productos.push(new Producto(10, "coca cola 2,5 lt", 990, 230));
-productos.push(new Producto(11, "pepsi cola 2 lt", 730, 160));
-productos.push(new Producto(12, "fanta 2 lt", 780, 110));
-productos.push(new Producto(13, "pritty limon 3lt", 930, 170));
+productos.push(new Producto(5, "smirnoff", 1930, 24));
+productos.push(new Producto(6, "smirnoff maracuya", 1930, 12));
+productos.push(new Producto(7, "smirnoff frutos rojos", 2060, 9));
+productos.push(new Producto(8, "skyy anana", 2200, 30));
+productos.push(new Producto(9, "skyy coco", 2000, 12));
+productos.push(new Producto(10, "coca", 990, 230));
+productos.push(new Producto(11, "pepsi", 730, 160));
+productos.push(new Producto(12, "fanta", 780, 110));
+productos.push(new Producto(13, "pritty", 930, 170));
 
-productos.unshift(new Producto(22, "sprite 3 lt", 1000, 12));
+productos.unshift(new Producto(22, "sprite", 1000, 12));
 
 productos.unshift(new Producto(27, "whisky blue label", 3000, 1));
 
@@ -473,8 +702,10 @@ let totalCompra = 0;
 
 function compra() {
 
+    //Creo un array vacío en el cual voy a almacenar los productos que se van comprando para que después pueda mostrar al usuario un resumen de la compra
+    const productosComprados = [];
+    
     // Inicializo otros valores que se van a usar en los métodos de pago.
-
     let descuento = 0.3;
     let recargaCredito = 0.2;
 
@@ -482,7 +713,7 @@ function compra() {
 
     let salir = false;
 
-    alert("Bienvenido a la tienda!!\nTenemos productos que van desde:\nCerveza brahma 473\nCerveza quilmes 473\nCerveza heineken 473\nFernet branca\nVodkas de Skyy y Smirnoff de ananá, frutos rojos, coco, maracuya\nGaseosas\nWhiskies :D");
+    alert("Bienvenido a la tienda!!\nTenemos productos que van desde:\nCerveza brahma 473\nCerveza quilmes 473\nCerveza heineken 473\nFernet branca\nVodkas de Skyy y Smirnoff de ananá, frutos rojos, coco, maracuya\nGaseosas de fanta 2 lt, pepsi 2 lt, sprite 3lt y\nWhisky blue label :D");
 
     //Uso el bucle for of para tener acceso a los objetos dentro del array productos
     for (const producto of productos) {
@@ -540,7 +771,7 @@ function compra() {
                 }
 
                 // Ciclo para solicitar la cantidad de productos hasta que sea una cantidad válida
-                //Tuve que recurrir a esta opcion ya que en el codigo anterior, si se ingresaba mal una opcion o incluso, si ingresaba un numero, se finalizaba el bucle y estuve buscando como hacer que, al ingrear mal la respuesta, se volviera a hacer la pregunta y no llevar al usuario al inicio de la funcion compra()
+                //Tuve que recurrir a esta opcion ya que en el codigo anterior, si se ingresaba mal una opcion o incluso, si ingresaba un numero, se finalizaba el bucle y estuve buscando como hacer que, al ingresar mal la respuesta, se volviera a hacer la pregunta y no llevar al usuario al inicio de la funcion compra()
                 while (true) {
 
                     // Solicito al usuario que ingrese cuantos productos quiere comprar.
@@ -554,6 +785,16 @@ function compra() {
 
                         //El precio final va a ser sumado al total de la compra para el caso que haya mas de 1 compra realizada
                         totalCompra += precioFinal;
+
+                        //Acá le ingreso, mediante el método push, las propiedades que van a estar dentro del resumen de compra, al constructor vacío productosComprados que había creado antes
+
+                        productosComprados.push({
+                            cantidad: cantidadComprada,
+                            nombre: productoEncontrado.nombre,
+                            pago: metodoDePago,
+                            precio: precio,
+                            montoTotal: precioFinal,
+                        });
 
                         //Actualizamos el stock del prodcuto comprado
                         productoEncontrado.stock -= cantidadComprada;
@@ -584,7 +825,14 @@ function compra() {
         }
     }
 
+    alert ("Resumen de productos comprados:");
+
+    //Uso el método forEach donde tome como parámetro cada ítem, que sería los objetos creados en el array productosComprados, para recorrerlos y podes extraer cada información dentro para brindar el resumen de la compra
+    productosComprados.forEach(item =>{
+        alert(`${item.cantidad} unidades de ${item.nombre}\nPagado con ${item.pago}\nAl precio de: $${item.precio} pesos\nMonto total: $${item.montoTotal} pesos`);
+    });
+
     alert(`Gracias por su compra. Total a pagar: $${totalCompra}`);
 }
 
-compra();
+compra();*/
