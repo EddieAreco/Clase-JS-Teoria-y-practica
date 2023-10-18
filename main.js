@@ -652,15 +652,24 @@ const ciudad5 = "Cordoba";
 
 //    15)
 
-function repetir(){
-    let numero = Number(prompt("Ingrese un numero"));
+let entrada = (prompt("Ingrese un numero entre 1 y 4 o ESC si quiere terminar la secuencia")).toUpperCase();
 
-    if (f)
-    switch(numero){
-        case 1:
+while (entrada != "ESC") {
 
+    if (entrada === "1"){
+        alert("Tomate");
+    }else if ( entrada === "2"){
+        alert("Papa");
+    }else if ( entrada === "3"){
+        alert("Carne");
+    }else if ( entrada === "4"){
+        alert("Pollo");
     }
-}
+
+    entrada = (prompt("Ingrese un numero entre 1 y 4 o ESC si quiere terminar la secuencia")).toUpperCase();
+};
+    
+
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
