@@ -640,7 +640,7 @@ const ciudad5 = "Cordoba";
 // for (let i = 0; i < Infinity; i++) {
 
 //     let personaje = prompt("Ingrese personajes de Harry Potter").toLowerCase();
-        
+
 //     listaNombres += personaje + "\n";
 
 //     if (personaje === "voldemort") {
@@ -652,24 +652,51 @@ const ciudad5 = "Cordoba";
 
 //    15)
 
-let entrada = (prompt("Ingrese un numero entre 1 y 4 o ESC si quiere terminar la secuencia")).toUpperCase();
+// let entrada = (prompt("Ingrese un numero entre 1 y 4 o ESC si quiere terminar la secuencia")).toUpperCase();
 
-while (entrada != "ESC") {
+// while (entrada != "ESC") {
 
-    if (entrada === "1"){
-        alert("Tomate");
-    }else if ( entrada === "2"){
-        alert("Papa");
-    }else if ( entrada === "3"){
-        alert("Carne");
-    }else if ( entrada === "4"){
-        alert("Pollo");
-    }
+//     if (entrada === "1"){
+//         alert("Tomate");
+//     }else if ( entrada === "2"){
+//         alert("Papa");
+//     }else if ( entrada === "3"){
+//         alert("Carne");
+//     }else if ( entrada === "4"){
+//         alert("Pollo");
+//     }
 
-    entrada = (prompt("Ingrese un numero entre 1 y 4 o ESC si quiere terminar la secuencia")).toUpperCase();
-};
-    
+//     entrada = (prompt("Ingrese un numero entre 1 y 4 o ESC si quiere terminar la secuencia")).toUpperCase();
+// };
 
+//       16)
+
+// function entrada(){
+//     return prompt("Ingrese dato");
+// }
+
+// function procesamiento(valor){
+//     return "La entrada fue " + valor;
+// }
+
+// function salida(valor){
+//     alert(`${valor}`);
+// }
+
+// salida(procesamiento(entrada()));
+
+//         17)
+
+function redondeo(){
+for (let i = 1; i <= 5; i++) {
+
+    let numero = Math.round(prompt("Ingrese un numero decimal"));
+
+    alert(`iteracion número ${i}, tiene el número: ${numero}`);
+}
+}
+
+redondeo();
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
